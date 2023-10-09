@@ -1,0 +1,15 @@
+{
+    "name": "admin/web-tools",
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "Framework"
+        }
+    },
+    "authors": [
+        {
+            "name": "khitun1",
+            "email": "Khitun2001@mail.ru"
+        }
+    ],
+    "require": {}
+}
