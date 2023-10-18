@@ -1,16 +1,17 @@
 <?php
 
 namespace Framework;
-
+include_once PATH_TO_MODELS.'Router.php';
 
 class Application
 {
 
-    private $router;
+    private Router $router;
 
 
     public function __construct(Router $router)
     {
+        require "app/routes.php";
         $this->router = $router;
     }
 
