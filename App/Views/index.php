@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body><?php
-        for ($i = 0; $i < count($data['arr']); $i++) {
-            echo "<h2>[".$i."] = ".$data['arr'][$i]."</h2>";
-        }
-    ?>
-</body>
-</html>
+<?php require 'app/views/header.php'?>
+    <h1>Имя: <?=$data['name']?></h1>
+    <h1>Значение: <?=$data['value']?></h1>
+<?php require 'app/views/footer.php'?>

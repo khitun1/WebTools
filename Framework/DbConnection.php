@@ -11,8 +11,8 @@ class DbConnection
         try {
             if (!self::$connection)
                 self::$connection = new PDO("$_ENV[dbconnection]:host=$_ENV[dbhost];dbname=$_ENV[dbname]", $_ENV['dbuser'], $_ENV['dbpassword']);
-//            self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Подключение к БД выполнено";
+            self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//            echo "Подключение к БД выполнено";
             return (self::$connection);
         }
         catch(PDOException $e) {

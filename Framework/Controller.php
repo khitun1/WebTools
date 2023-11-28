@@ -5,7 +5,6 @@ namespace Framework;
 class Controller
 {
     public function view($template_path, $data){
-
         $template = file_get_contents('app/Views/'.$template_path);
         ob_start();
         eval("?>".$template."<?");
